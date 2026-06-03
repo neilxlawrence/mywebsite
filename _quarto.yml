@@ -3,14 +3,13 @@ project:
   output-dir: docs   # ensures GitHub Pages will work
 
 website:
-  title: "babyPHONO"
+  title: "NEIL"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - href: study-team.qmd
-        text: Study team
+      - href: about.qmd
+        text: About
     logo: images/babyphono_logo_purple.png
     
 format:
