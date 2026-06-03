@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>infection – NEIL</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<meta name="google-site-verification" content="YNCoKHF_iTIL2Mel8LO_p5IDsyJMHZ4XeLQvDbiXY2U">
+
+
+
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/babyphono_logo_purple.png" alt="" class="navbar-logo light-content">
+    <img src="./images/babyphono_logo_purple.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">NEIL</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./1_infection.qmd"> 
+<span class="menu-text">1 Infection</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<p>1</p>
+<p>1 Scope and exceptions This guideline applies to:</p>
+<p>Setting Directorate - Neonatology Individuals All Neonatal Staff and Midwifery Staff Speciality Neonatology</p>
+<p>This guideline does not apply to adults and children outside those on the postnatal wards and neonatal unit.</p>
+<p>The guideline uses the terms ‘woman’ or ‘mother’ throughout. These should be taken to include people who do not identify as women but are pregnant or have given birth. Similarly, where the term ‘parents’ is used, this should be taken to include anyone who has main responsibility for caring for a baby https://www.nice.org.uk/guidance/ng194</p>
+<p>1 Scope and exceptions 1 2 Summary and guideline 3 2.1 Aim of guideline 3 2.2 Summary flowchart of neonatal infection management 4 3 Early onset sepsis (EOS) 5 3.1 Antenatal risk factors for early onset sepsis1 5 3.1.1 Red flag 5 3.1.2 Risk factors 5 3.2 Clinical signs of early onset sepsis1 5 3.2.1 Red flag clinical indicators 5 3.2.2 Transitional symptoms (relevant to early onset sepsis only)3 5 3.2.3 Other clinical signs1 5 3.3 Medical review for early onset sepsis1,3 6 3.4 Action required for early onset sepsis 6 3.5 Observations required1 7 3.6 Investigation for early onset sepsis 7 3.6.1 Babies undergoing observation only 7 3.6.2 Babies on antibiotic treatment for early onset sepsis 7 3.6.2.1 Haematology 7 3.6.2.2 Clinical chemistry 7 3.6.2.3 Microbiology 7 3.6.2.4 Other investigations 8 Infection Neonatal Early and Late Onset</p>
+<p>2 3.7 Empiric antimicrobial treatment for early onset sepsis 8 3.8 Stopping antibiotics in well infants with previously suspected EOS 9 3.8.1 Reassuring investigations 9 3.8.2 Indeterminate investigations 9 4 Late onset sepsis (LOS) 10 4.1 Signs and symptoms of late onset sepsis in infants1 10 4.2 Investigation for late onset sepsis 10 4.2.1 Haematology 10 4.2.2 Clinical chemistry 10 4.2.3 Microbiology 11 4.2.4 Other specimens 11 4.3 Empiric antimicrobial treatment for late onset sepsis 11 4.4 Prophylactic antifungals for late onset sepsis 12 5 Blood culture interpretation for EOS and LOS 12 6 CSF investigations/interpretation for EOS and LOS 13 6.1 Interpreting neonatal CSF parameters 13 7 Antimicrobial treatment course length (EOS and LOS) 14 7.1 Targeted antimicrobial treatment depending on clinical syndrome or pathogen 14 7.2 Blood culture negative infection 14 7.3 Meningitis 14 7.3.1 Repeat lumbar punctures 14 7.3.2 Negative CSF culture/PCR/but equivocal microscopy result/high clinical suspicion 15 7.4 Infants with invasive S. aureus disease 15 7.5 Ophthalmia neonatorum1 15 7.5.1 Mildly inflamed/erythematous eyes 15 7.5.2 Severely affected eyes 15 7.5.3 Infective causes: 16 8 References - literature 21 9 References - clinical decision making 21 10 Rationale for differing from NICE guidance1 22 11 Appendices 22 12 Document Control and Version history 27 13 Consultation and review 27 14 Document imprint 27 2 Summary and guideline 2.1 Aim of guideline 1 .<br>
+The aim of this guideline is to summarise the local application of the NICE guidelines (last updated 2024) The risk factors and empirical antibiotics of choice differ between early and late onset infection: Early onset infection (EOS) is defined as any infection in an infant less than 72 hours of age Late onset infection (LOS) is defined as any infection in an infant after 72 hours of age. Babies will be assessed using this guideline if there are antenatal risk factors increasing their risk of sepsis (section 3.1) in the first 72 hours of age or if they have any clinical concern regarding suspected sepsis at any point (section 3.2). Note in this guideline, the terms sepsis and infection are used interchangeably, as these are the terms used in practice however there is a clinical difference between infants with an infection (microbiologically proven or otherwise) and true sepsis with systemic multi-organ effects. 3</p>
+<p>4 Summary flowchart of neonatal infection management</p>
+<p>Suspected sepsis with no obvious clinical focus Clinical assessment 1st line septic screen Investigations to consider - Blood culture peripheral &amp; central lines - LFT - for late onset sepsis (LOS) - FBC - CXR/AXR - CRP - ET secretions (if ventilated)<br>
+- LP - consider if neuro symptoms - wound/lesion/eye/umbilical swabs<br>
+- NPA for resp viruses (cons discussion first) - viral stool and throat swab Up to 72 hours of age: EOS - benzyl penicillin and gentamicin Over 72 hours of age: LOS - teicoplanin, gentamicin with nystatin unless other microbiology plan in place/known resistant pathogens<br>
+Baby deteriorating at 24 hours Negative blood culture at 36hrs Baby well - stop antibiotics Follow guideline (below) &amp; microbiology advice 1. Clinical assessment 2. antibiotic doses &amp; levels 3. Discuss with Neonatal consultant and Microbiology 4. Repeat blood cultures &amp; consider further investigations 5. If deteriorating eg increasing inotrope requirements, consider meropenem for broader Gram negative cover 6. If suspected central line infection-consider vancomycin 7. Consider other sources e.g.&nbsp;viral infection, deep foci (bone, heart, liver, renal), central lines, fungal infection 8. Consider adding acyclovir and/or systemic antifungal treatment (see Candida and HSV guideline) Positive blood culture Baby improving 3 Early onset sepsis (EOS) Early onset infection (EOS) is defined as any infection in an infant less than 72 hours of age 3.1 Antenatal risk factors for early onset sepsis 3.1.1 Red flag 1 Suspected or confirmed infection in another baby in the case of a multiple pregnancy.<br>
+3.1.2 Risk factors 1. Invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy. For maternal colonisation, this is not a risk factor if intrapartum antibiotics have been given 4 hours or more before delivery<br>
+2. Pre-term birth following spontaneous labour before 37 weeks’ gestation.<br>
+3. Confirmed rupture of membranes for more than 18 hours before a pre-term birth.<br>
+4. Confirmed prelabour rupture of membranes at term for more than 24 hours before the onset of labour. (prelabour as defined by maternity team, if any uncertainty regarding definition, treat as risk factor) 5. Intrapartum fever higher than 38°C if there is suspected or confirmed bacterial infection.<br>
+6. Clinical diagnosis of chorioamnionitis (as defined by maternity team) 3.2 Clinical signs of early onset sepsis 3.2.1 Red flag clinical indicators 1 Apnoea Seizures Need for cardiopulmonary resuscitation (after delivery or if receiving therapeutic hypothermia)<br>
+Need for mechanical ventilation (in term infants)<br>
+Signs of shock 3.2.2 Transitional symptoms (relevant to early onset sepsis only) 3 One persistent physiologic abnormality &gt;4hrs (i.e.&nbsp;trigger point at 4 hours) or 2 lasting for &gt; 2hrs (i.e.&nbsp;trigger point at 2 hours) Tachycardia (HR &gt; 160) Tachypnoea (RR &gt; 60) Temperature abnormality (lower than 36 unexplained by environmental factors C or higher than 38 C Respiratory distress (grunting, flaring, or retracting) not requiring supplemental O2 3.2.3 Other clinical indicators 1 Altered behaviour or responsiveness Altered muscle tone (for example floppiness) Feeding difficulties (for example feed refusal) Feed intolerance (including vomiting, excessing gastric aspirates and abdominal distension Abnormal heart rate (bradycardia) Hypoxia (for example central cyanosis or reduced oxygen saturation level) Persistent pulmonary hypertension of the newborn Jaundice within 24 hours of birth Signs of neonatal encephalopathy Unexplained excessive bleeding, thrombocytopenia or abnormal coagulation 5 Altered glucose homeostasis (hypoglycaemia or hyperglycaemia) Metabolic acidosis (base deficit of 10mmol/l or greater) 3.3 Medical review for early onset sepsis 1,3 Medical team to review promptly (within 1 hour of delivery or clinical concern). Every review should include a clinical assessment of the baby including review of the maternal history and a full clinical examination of the baby. This should be clearly documented using the templates on Connect. 1 There are 3 categories of clinical signs an infant might have: Red flags Transitional symptoms Clinical indicators i 1,iii Red flags are very concerning clinical signs and warrant commencing treatment irrespective of other risk factors. can be due to environmental events or due to delayed transition to extra-utero life, therefore if these are the only findings and there are no antenatal concerns, infants should have NEWTT observations and a medical review again after 2 hours and at least 2 hourly until the concerns have resolved. If infants still have these symptoms at the defined trigger point, or they commence late (after 4 hours of age), treatment should be commenced. NEWTT observations should continue for 12 hours. Clinical indicators indicate some concern regarding sepsis - below.<br>
+3.4 Action required for early onset sepsis The required action will depend on the risk factors (section 3.1) and the findings of the medical review (section 3.3) and are summarised as per the table below (Table 1): Clinical signs 0 Risk factors Transitional symptoms not reaching trigger point (2 or 4 hours) or 1 Clinical indicator Transitional symptoms reaching trigger point or late onset (after 4 hours) 0 1 2 or more N/A Observations for 12 hours 2 or more clinical indicators or 1 clinical indicator and any transitional symptoms Observations for 12 hours<br>
+Red flag Commence antibiotics Commence antibiotics Commence antibiotics Red flag Table 1 Action required for early onset sepsis 6 1 3.5 Observations required It is recommended that infants with one risk factor for sepsis or one clinical indicator or transitional symptoms have observations performed 1 . All babies who are treated for suspected sepsis will require observations and daily neonatal review for the full duration of treatment as per the NEWTT guideline. Undertake observations at 1, 2, 4, 6, 8, 10 and 12 hours of age. If there is any concern raised by these observations, then these should be escalated in line with the NEWTT policy. If the baby remains well at the end of this time they can be discharged.<br>
+3.6 Investigation for early onset sepsis 3.6.1 Babies undergoing observation only Babies undergoing observation only (not on antibiotics) do not require any investigations. 3.6.2 Babies on antibiotic treatment for early onset sepsis Parents of all postnatal ward babies on antibiotics should receive starting antibiotics means for your 3.6.2.1 Haematology Total white blood count Neutrophil count Platelet count 3.6.2.2 Clinical chemistry C reactive protein (CRP)</p>
+<p>These babies should also have a CRP repeated at 12-24 hours. The second CRP should, when possible, be timed to coincide with the phlebotomy round on the postnatal ward iii,d . 3.6.2.3 Microbiology - - Blood cultures Blood cultures should be taken prior to starting antibiotics, and before any change in therapy to help guide appropriate treatment and length of course needed.<br>
+Blood cultures must be taken using aseptic technique, and with as high a blood volume as possible (minimum 0.5 ml, aim for 1 ml).<br>
+Lumbar puncture 1 Consideration should be given to performing a lumbar puncture with the initial infection screen. Lumbar puncture should be considered in infants with one of the following : 1. Positive blood cultures (excluding skin contaminants) 2. Not improving on antibiotics 3. Clinical features consistent with meningitis 4. Infants in which there is a strong clinical suspicion of infection (for example those requiring a course of antibiotics plus ongoing admission to the neonatal unit due to signs of sepsis) ii,f 7 See section 6.1 and appendix 3 for CSF tests and interpretation. Contraindications to lumbar puncture include 1 :<br>
+Clinical signs of shock Coagulopathy (no need for routine clotting screen, but if any clinical suspicion re coagulopathy, to check and defined as per network guideline outside normal range)<br>
+Platelet count &lt;50 x 109/L 8 1 Bleeding risk Respiratory insufficiency 3.6.2.4 Other investigations 1 . Other investigations (see flow chart in section 2) as guided by history and examination. Urine infection investigation is unlikely to be useful in this age group of infants 3.7 Empiric antimicrobial treatment for early onset sepsis Clinical context Antimicrobial ^Also add nystatin<br>
+First line EOS Notes Benzyl penicillin and gentamicin* Infants who are significantly deteriorating with a suspected Gram-negative infection (e.g.<br>
+unexplained escalating inotrope requirement) Meropenem^ For infants with suspected central line infection Add teicoplanin<br>
+Meropenem has broader Gram-negative cover than gentamicin If not clinically improving, consider changing teicoplanin to vancomycin and removal of line/s Infants with suspected meningitis Also refer to Section 7.3 High dose meropenem ii,h and high dose amoxicillin^<br>
+Infants suspected to have herpes simplex virus (HSV) i.e.&nbsp;risk factors, abnormal LFTs, other clinical signs/symptoms Add acyclovir Also consider HSV (see row below)<br>
+See Herpes simplex virus infection guideline Table 2 Empiric antimicrobial treatment for early onset sepsis *Gentamicin levels are needed prior to the second dose. On the postnatal ward it is appropriate to hold the 36-hour antibiotic doses (and gentamicin level) if it is likely that antibiotics will be discontinued with negative cultures at 36 hours and the results are due within the next 12 hours. **It has been demonstrated on NNU that previous Coagulase negative staphylococci (CoNS) isolate resistance patterns did not predict subsequent patient outcomes, therefore it may be appropriate to use teicoplanin even if teicoplanin resistance has been noted on previous isolates from the baby.<br>
+For dosing information, refer to the neonatal formulary 8 Consider intramuscular antibiotics if intravenous access is very difficult (discuss with consultant first). Ideally administer only after blood cultures have been obtained. 3.7 Stopping antibiotics in well infants with previously suspected EOS 3.8.1 Reassuring investigations Infants who remain well (i.e.&nbsp;feeding well, no temperature instability, stable observations), with reassuring investigations (reassuring FBC and CRPs and negative blood cultures) and initial suspicion of sepsis was not high can be discharged immediately after stopping antibiotics. There is no need for a period of observation. The IT ratio may also be useful to review (appendix 1). 3.8.2 Indeterminate investigations This group includes infants with significantly increasing CRPs or non-reassuring FBC but negative blood cultures. If well with otherwise reassuring features and initial clinical suspicion of sepsis was not high (for example only risk factors or quickly resolving clinical signs), these infants can be discharged following senior review however for those with high CRPs it may be worth considering a repeat CRP with a further period of observation for 12 hours to ensure CRP trend reassuring iii (after either continuing or discontinuing antibiotics). Consider also reviewing IT ratio (appendix 1). Information must be given to the family on symptoms/signs of infection and what to do if they have any concerns. commencing antibiotics using the standard letter template. 9</p>
+<p>10</p>
+<p>4 Late onset sepsis (LOS) Late onset infection (LOS) is defined as any infection in an infant after 72 hours of age. 4.1 Signs and symptoms of late onset sepsis in infants1 The signs and symptoms of late onset sepsis in infants are varied and subtle. Not all of those listed below will be due to infection, and do not necessarily mean that investigations must be performed, equally some infants will have an infection without any of these signs however they should be used as triggers for a further clinical assessment of the infant.</p>
+<p>Clinical indicators of possible late onset neonatal infection<br>
+Indicators<br>
+Behaviour Parent or care-giver concern for change in behaviour<br>
+Appears ill to a healthcare professional<br>
+Does not wake, or if roused does not stay awake<br>
+Weak high-pitched or continuous cry<br>
+Respiratory Raised respiratory rate: 60 breaths per minute or more<br>
+Grunting<br>
+Apnoea<br>
+Oxygen saturation of less than 90% in air or increased oxygen requirement over baseline<br>
+Circulation and hydration<br>
+Persistent tachycardia: heart rate 160 beats per minute or more<br>
+Persistent bradycardia: heart rate less than 100 beats per minute<br>
+Skin Mottled or ashen appearance<br>
+Cyanosis of skin, lips or tongue<br>
+Non-blanching rash of skin<br>
+Other Temperature 38°C or more unexplained by environmental factors<br>
+Temperature less than 36°C unexplained by environmental factors<br>
+Alterations in feeding pattern<br>
+Abdominal distension<br>
+Seizures<br>
+Bulging fontanelle<br>
+Table 3 Signs and symptoms of late onset sepsis in infants</p>
+<p>4.2 Investigation for late onset sepsis 4.2.1 Haematology Total white blood count Neutrophil count Platelet count 4.2.2 Clinical chemistry C reactive protein (CRP) and repeat CRP after 12-24 hours to review response to treatment (timed with phlebotomy)1,iii Liver function tests -consider LFTs as a marker for HSV infection4</p>
+<p>4.2.3 Microbiology - - Blood cultures Blood cultures should be taken prior to starting antibiotics, and before any change in therapy to help guide appropriate treatment and length of course Blood cultures must be taken in a sterile manner, and with as high a blood volume as possible (minimum 0.5ml, aim for 1ml).<br>
+Lumbar puncture 1,ii,f Consider an LP; a. Where there is a strong clinical suspicion of neonatal infection eg previously well infants with no other source/cause (e.g.&nbsp;those in SCBU) b. There are clinical symptoms or signs suggesting meningitis.<br>
+c.&nbsp;Infants with positive blood cultures (except coagulase negative staphylococcus or other skin commensals) d.&nbsp;The baby does not respond satisfactorily to antibiotic treatment See section 6 and appendix 3 for CSF tests and interpretation. Contraindications to lumbar puncture include Clinical signs of shock 1 :<br>
+Coagulopathy (no need for routine clotting screen, but if any clinical suspicion re coagulopathy, to check and defined as per network guideline outside normal range)<br>
+Platelet count &lt;50 x 109/L 8 1 Bleeding risk Respiratory insufficiency 4.2.4 Other specimens These should be taken as clinically indicated: ET secretions for MC&amp;S Stool sample (consider viral PCRs in addition to MC&amp;S) Chest x-ray NPA for viral respiratory PCRs (discuss with consultant first) Wound/lesion/eye/umbilical swabs (viral and bacterial- green and black swabs) Viral throat and stool swabs Urine (no longer routinely recommended by NICE but consider for babies with increased risks e.g.&nbsp;those with renal tract anomalies or who have had an indwelling catheter) 4.3 Empiric antimicrobial treatment for late onset sepsis Antibiotic cover needs to include Gram positive and Gram negative pathogens and the aim is to use narrow spectrum options as possible to minimise resistance, while covering the likely causative organisms. For infants who develop suspected LOS who are already on EOS antibiotic regime (benzyl penicillin and gentamicin), a judgement is required as to whether antibiotic regime should be teicoplanin and gentamicin or meropenem and teicoplanin. This will depend on the clinical condition of the baby i.e.&nbsp;a slight deterioration versus significant septic episode and suspected focus (e.g.&nbsp; suspected line sepsis versus meningitis) and any positive microbiology samples from mother and baby (e.g.&nbsp;admission swabs).<br>
+Once blood culture results are reported (at 36 hours) and if clinical status is improving, consider rationalising or stopping one or both antibiotics i.e.&nbsp;there 11 is no need for teicoplanin/vancomycin if the underlying diagnosis is necrotising enterocolitis.<br>
+Clinical context Antimicrobial ^Also add nystatin<br>
+Notes First line LOS Teicoplanin^ and gentamicin If NEC suspected, add metronidazole Infants who are significantly deteriorating with a suspected Gram-negative infection (e.g.<br>
+unexplained escalating inotrope requirement) Meropenem^ and teicoplanin Meropenem has broader Gram negative cover than gentamicin If on meropenem, metronidazole is not required in addition<br>
+For infants with suspected central line infections that are not clinically improving on teicoplanin* Consider changing teicoplanin* to vancomycin and line/s removal<br>
+Infants with suspected meningitis High dose meropenem ii,h Also refer to Section 7.3 Infants suspected to have herpes simplex virus (HSV) i.e.&nbsp; risk factors, abnormal LFTs, other clinical signs/symptoms and high dose amoxicillin<br>
+Add acyclovir Also consider HSV (see row below)<br>
+See Herpes simplex virus infection guideline Table 4 Empiric antimicrobial treatment for late onset sepsis *It has been demonstrated on NNU that previous Coagulase negative staphylococci (CoNS) isolate resistance patterns did not predict subsequent patient outcomes, therefore it may be appropriate to use teicoplanin even if teicoplanin resistance has been noted on previous isolates from the baby.<br>
+4.4 Prophylactic antifungals for late onset sepsis Fungal infection is a small but significant cause of infection, particularly in infants receiving neonatal intensive care.<br>
+NICE 1 recommends oral nystatin as prophylaxis against fungal infections for infants below 30/40 gestation at birth or &lt;1.5kg at birth being treated for late onset sepsis.<br>
+This should be continued for 48 hours after discontinuing antibiotics. For infants where oral nystatin cannot be administered, consider prophylactic dose fluconazole. If there is clinical concern of fungal infection, refer to the Candida infection guideline.<br>
+5 Blood culture interpretation for EOS and LOS Between 0900 and 2000, all positive blood cultures will be called to NNU teams directly by the microbiology team and advice given. and midnight will soon be viewable via ICE iv. For assistance in interpreting these Gram film results, see guideline. Further advice for deteriorating/septic infants can be obtained by calling the microbiologist on call. 12 6 CSF investigations/interpretation for EOS and LOS CSF samples from any baby in Jessop Wing will undergo rapid PCR panel testing (Qiastat). This takes approximately 90 minutes to run and only one sample can be processed at a time. Samples received in the NGH lab between 0900 and 2200 will be resulted in real-time and communicated to the postnatal ward registrar. Outside of these times, samples will be resulted the next day.<br>
+will be discussed with microbiology medics for very low volume samples (&lt;200 µl). The in-house PCR panel will test for:<br>
+Bacteria: E. coli, Haemophilus influenzae, Listeria monocytogenes, Neisseria meningitidis, Streptococcus agalactiae (Group B streptococcus), Streptococcus pneumoniae, Streptococcus pyogenes (Group A streptococcus), Mycoplasma pneumoniae Viral: Varicella Zoster virus, HSV-1 &amp; 2, Enterovirus, HHV-6, Human parechovirus Fungal: Cryptococcus neoformans/gattii. Other bacterial PCRs can be requested on a case-by-case basis after discussion with microbiology. These are processed at an offsite reference laboratory and will usually take 3 -5 working days to result. See 6.1.1 and appendix 2 and 3 for interpretation of CSF findings and meningitis/encephalitis treatment. If a baby may meet the criteria for a diagnosis of meningitis/encephalitis, please discuss the case with the neonatal consultant before speaking to families.<br>
+6.1 Interpreting neonatal CSF parameters There are wide reference ranges and much discrepancy regarding interpreting CSF results. The range specified within the previous NICE guideline recommended i.e.&nbsp;more than 20 white cells/microlitre (or mm Appendix 2 lists other reference ranges. 6 3 is ) however It may be appropriate to correct for red cell contamination however there is little evidence to support this - see Appendix 2 for methods that can be used. Infant CSF White blood cell count/microL Protein (g/l)# Preterm &lt;20 Glucose (% of plasma glucose) 1 (0.5-2.9) Term &gt;50% &lt;20 0.6 (0.3-2.5) Table 5 Interpretating neonatal CSF parameters &gt;50% For protein, ensure to correct for cells in the CSF i.e.&nbsp;1000 cells contributes 0.01g/L of protein See Appendix 3 for Jessops guide to the management of in-house CSF PCR results. 13 7 Antimicrobial treatment course length (EOS and LOS) 7.1 Targeted antimicrobial treatment depending on clinical syndrome or pathogen For targeted antimicrobial treatment, including duration and further guidance, see Table 6 below. 7.2 Blood culture negative infection If continuing antibiotics for longer than 36 hours e for suspected neonatal infection despite a negative blood culture, review the baby at least once every 24 hours. At each review, decide whether to stop antibiotics, taking account of:<br>
+the level of initial clinical suspicion of infection and<br>
+the baby’s clinical progress and current condition and<br>
+the levels and trends of CRP<br>
+For infants who have negative blood cultures, but where sepsis is strongly suspected and with non-reassuring investigations days ii,g 1 iii or who are unwell, an antibiotic course of five is recommended. However, on an individual basis a longer or shorter course may be appropriate depending on the: 1. level of initial clinical suspicion of infection 2. baby’s clinical progress and current condition 3. levels and trends of CRP.<br>
+7.3 Meningitis Meningitis is diagnosed if a lumbar puncture has any of the following 1,iii : More than 20 white blood cells/microL in CSF (irrespective of red cell count) Positive Gram stain Positive bacterial PCR result (see Section 2.6 for what is tested in-house) Positive CSF culture Infants with suspected meningitis awaiting or with inconclusive in-house CSF PCR results should have their antibiotics empirically changed to high dose meropenem ii,h and high dose amoxicillin pending CSF culture/PCR results and further microbiology advice sought. Also consider the risk of Herpes simplex encephalitis and the need for aciclovir (see Herpes guideline for information on diagnosis and treatment). For babies with confirmed meningitis: Examine their back for any signs of a sinus, consider any underlying cause for meningitis (e.g.&nbsp;immunodeficiency, immunisation history, medications that may reduce immune response including complementary medicines) Babies should have neonatal follow up<br>
+1 Infants with anticonvulsants should be referred to Dr Motaleb (SCH consultant paediatrician) 7.3.1 Repeat lumbar punctures The lumbar puncture should be repeated 1 persistent or re-emergent fever deterioration in clinical condition in infants who have any of: new clinical findings (especially neurological findings) persistently abnormal inflammatory markers Do not perform a repeat lumbar puncture in neonates who are receiving antibiotic treatment appropriate to the causative organism and are making a good clinical recovery or before stopping antibiotic therapy if they are clinically well 1 . 14 7.3.2 Negative CSF culture/PCR/but equivocal microscopy result/high clinical suspicion If clinical or CSF findings are suggestive of meningitis, but the CSF culture is negative or not interpretable (e.g.&nbsp;heavily blood stained), babies should complete 14 days of antibiotics Amoxicillin can be discontinued if Listeria is not felt to be a significant possibility e.g.&nbsp;baby was not significantly clinically unwell and/or PCR for listeria is negative Babies well enough to be cared for on the postnatal ward should have empiric meropenem switched to cefotaxime (complete 14 days treatment in total) unless advised otherwise by microbiology. 7.4 Infants with invasive S. aureus disease Investigate for joint/bone infections, endocarditis, skin and soft tissue infections etc.<br>
+Request an echocardiogram to look for infective endocarditis<br>
+Require a minimum of 2 weeks of high dose anti-staphylococcal therapy but this may need to be extended if deep infection is identified<br>
+Repeat blood cultures 48hr after the start of therapy should be taken<br>
+Treatment is unlikely to succeed unless all lines are removed/changed<br>
+1 7.5 Ophthalmia neonatorum 7.5.1 Mildly inflamed/erythematous eyes These do not usually need treatment. Consider microbiology swab and treat on result if sticky eye persists. 7.5.2 Severely affected eyes Consider gonococcus, chlamydia and herpes simplex virus. Babies with a high clinical suspicion of genuine ophthalmia neonatorum need discussion with consultant neonatologist. Send swabs for: Microscopy (urgent Gram stain for gonococcus), culture and sensitivity (MC&amp;S, black swab)<br>
+Viral studies (green swab) Alinity multi-collect specimen collection kit for chlamydia and gonococcal PCR (nucleic acid amplification tests, NAATs) Commence empiric treatment with: Cefotaxime only single dose required (see N. gonorrhoea below) 7,8 Clarithromycin continue for 2 weeks if C. trachomatis confirmed (can be oral)<br>
+Aciclovir can be oral unless clinically unwell. Discontinue if swab for herpes simplex virus are PCR negative<br>
+Chloramphenicol eye drops 15 7.5.3 Infective causes: Streptococci, Staphylococci, coliforms, Haemophilus Account for 30 -50% cases Usually presents day 2 -14 Chlamydia trachomatis Accounts for 2 40% cases Usually presents day 5 14 Requires 2 weeks treatment with clarithromycin Mother should be screened for sexually transmitted infections advise referral to genito-urinary medicine Neisseria gonorrhoea<br>
+Accounts for &lt;1% cases Usually presents in first 5 days of life Treat with single dose cefotaxime 10, 11 Continue clarithromycin and aciclovir until Chlamydia and HSV excluded<br>
+Mother should be screened for sexually transmitted infections advise referral to genito-urinary medicine Viral (Herpes simplex) Usually presents within first 14 days of life Discuss treatment with virologist 16</p>
+<p>8 References - Literature 1. Neonatal infection: antibiotics for prevention and treatment NICE guideline (NG195) Published 20 April 2021, last updated March 2024 Overview | Neonatal infection: antibiotics for prevention and treatment | Guidance | NICE 2. On behalf of the Royal College of Obstetricians and Gynaecologists. Prevention of early-onset neonatal group B streptococcal disease. Green-top Guideline No.&nbsp;36. BJOG2017; 124:e280e305. 3. Kaiser Permanente sepsis calculator https://neonatalsepsiscalculator.kaiserpermanente.org<br>
+4. National Child Mortality Database, Deaths of Children due to Neonatal Herpes Simplex Virus October 2025 NCMD-HSV-Briefing.pdf<br>
+5. Guidelines on transfusion for fetuses, neonates and older children, British Journal of Haematology 2016 Volume 175, 5 P784-828<br>
+6. Meningitis (bacterial) and meningococcal disease: recognition, diagnosis and management NICE guideline NG240 Published March 2024 Overview | Meningitis (bacterial) and meningococcal disease: recognition, diagnosis and management | Guidance | NICE 7. Dr Helen Mactier Eye infections in the neonate: Ophthalmia Neonatorum and the management of systemic Gonococcal and Chlamydial infections (scot.nhs.uk) Reviewed 01.01.23 8. UK Paediatric Antimicrobial Stewardship: Antimicrobial Paediatric Prescribing Summary https://uk-pas.co.uk/Antimicrobial-Paediatric-Summary-UKPAS.pdf Last updated Feb 2025 9. Greenberg R, Smith B, Cotton M, Moody A, Clark R, Benjamin D, Traumatic lumbar punctures in neonates: test performance of the cerebrospinal fluid white blood cell count, Pediatr Infect Dis J. 2008 December; 27(12): 10471051.<br>
+10. Osborne J, Pizer B, Effect on the white cell count of contaminating cerebrospinal<br>
+fluid with blood, Arch Dis Child. 1981 May; 56(5): 400 401.<br>
+11. Bonsu BK, Harper MB, Corrections for leukocytes and percent of neutrophils do not match observations in blood-contaminated cerebrospinal fluid and have no value over uncorrected cells for diagnosis, Pediatr Infect Dis J. 2006 Mar;25(3):207.<br>
+12. D Mazor SS, McNulty JE, Roosevelt GE, Interpretation of Traumatic Lumbar Punctures: Who Can Go Home? Pediatrics, 2003 11(3):525-528<br>
+13.<br>
+14. Workbook in Practical Neonatology 3rd Edition Polin et al 2000 9 References - Clinical decision making i)<br>
+ii)<br>
+As per discussion with Jessop Wing Obstetric team<br>
+As per Microbiology discussion with Dr E Ridgeway [now retired] and Dr C Lynch, consultant microbiologists, Sheffield Teaching Hospital NHS Foundation Trust iii) As per discussion with Jessop Wing neonatal consultant team. iv) Due to workload limitations in the microbiology laboratory, these results cannot currently be called to the neonatal team. Due to this limitation and that microbiology results do not get pulled into the neonatal EPR (Badger), it is not an expectation that the gram film will be reviewed overnight. This will be audited and any clinical impact will reconsider this pathway. 21 10 Rationale for differing from NICE guidance 1 a) Transitional symptoms. These are based on the Kaiser Permanente sepsis calculator assessment. This has been added to this guideline as they have been successfully used in the previous guideline at JW to allow for transitional symptoms to pass and reduce antibiotic b) exposure.<br>
+subsequent to babies were given CPR due to airway management issues rather than sepsis c) Ventilation<br>
+may receive d) ventilation to provide surfactant administration cultures to be analysed, however the majority of positive blood cultures are identified by 12 hours. This prevents the need for gentamicin levels and additional antibiotic exposure and cannulation attempts. e) Local blood culture analyser now flags results at 36 hours for all neonatal blood cultures to improve antimicrobial stewardship (note NICE recommends resulting at 48 hours for late onset sepsis). Any discrepancies are monitored monthly with further review if any significant pathogens have been missed. To date (March 2026) no clinically relevant f) concerns have been identified. for example those requiring a course of antibiotics plus ongoing admission to the neonatal unit due to signs of</p>
+<ol start="7" type="a">
+<li>effect and demonstrates good antimicrobial stewardship. No evidence has been provided with the NICE guideline to support changing this policy</li>
+<li>Meningitis. Jessop Wing current microbiology surveillance suggests that there are still a significant number of Gram-negative infections that are cefotaxime resistant.<br>
+Therefore, empirical meropenem and amoxicillin is a more rational choice locally. 11 Appendices Appendix 1 IT ratio-calculation and interpretation Appendix 2 Appendix 3 CSF interpretation Guide to management of in-house CSF PCR results 22</li>
+</ol>
+<p>23 Appendix 1 IT ratio</p>
+<p>IT ratio = Ratio of immature to total neutrophils = [bands+metamyelo+myelo]<br>
+[bands+metamyelo+myelo+neutrophils]</p>
+<p>Normal values: Day 1: up to 0.16 Day 2: up to 0.14 up to 0.12</p>
+<p>If &gt;0.2 and low neutrophil count or high CRP means infection is likely.<br>
+Appendix 2 Alternative CSF interpretation 9-12 This can be done either by allowing 1 white cell per 500-1000 red cells or by referring to the full blood count result using the following formula:<br>
+Expected CSF WCC = CSF red cell count x (Blood WCC/Blood RBC) We want to work out how many white cells are coming from the CSF and NOT from the blood. So if the patient has a serum WCC of 15 x 10 x9 /L, and a RCC of 5 x 10 x12 the FBC result), and the CSF results are: WCC 100/mm 3 , RCC 10 000/mm 3 . /L (found on 30 (blood ratio 15WBC:5000RBC, in CSF 10000 RBC seen therefore 30 WBC expected) Permissible number = those from the blood contamination + 20 But this patient has 100 WCC so the remaining white cells are from the CSF. This would indicate meningitis. If the true CSF WCC is higher than the expected CSF WCC, a diagnosis of meningitis is made, however this is less validated in infants &lt;1month of age. Other reference ranges are shown in the two tables below: Infant Red cell count (mm3) Protein (g/l)# White cell* count (mm3) Glucose (mmol/l) Preterm &lt;7 days 30 (0-333) 9 (0-33) 1 (0.5-2.9) Glucose (% of plasma glucose) 3 (1.5-5.5) Preterm &gt;7 days 30 12 (2-70) 0.9 (0.5-2.6) &gt;50% 3 (1.5-5.5) Term &lt;7 9 (0-30) 5 (0-30) 0.6 (0.3-2.5) &gt;50% 3 (1.5-5.5) days Term days &gt;7 &lt;10 3 (0-10) 0.5 (0.2-0.8) 3 (1.5-5.5) &gt;50% &gt;50% Reference 13 WBC (mm 3 ) PMN (mm 3 ) Term Mean+ SD 7+-13 0.8+-6.2 Protein (mg/dl) Glucose (mg/dl) 64+-24 Median Mean+ SD 4 4+-3 0<br>
+51+-13 Preterm (&lt;1000g) 6+-15 150+-56 Median 6<br>
+61+-34 Reference 14 24</p>
+<p>27 12 Document control Version 1 Status Current<br>
+Document Sponsor Tamanna Williams, Clinical Lead Author Elizabeth Pilling, Consultant Neonatologist Approval body Neonatal Guideline Group Date approved 29/04/2026 Ratification body Neonatal Guideline Group Date ratified 29/04/2026 Issue date 13/05/2026 Review date 29/04/2031</p>
+<p>Version history Version Date issued Brief summary of changes Author 1 May 2026<br>
+Merging of early onset and late onset sepsis guideline. Reformatting of information. Reference to Connect EPR for documentation.</p>
+<p>Addition of reference to out of hours gram film interpretation guide (separate guideline) Elizabeth Pilling (Consultant Neonatologist)</p>
+<p>Emma Boldock (Consultant Microbiologist)</p>
+<p>13 Consultation and review Groups / persons consulted Date Consultant Neonatologists, Consultant Microbiologists</p>
+<p>14 Document imprint © Sheffield Teaching Hospitals NHS Foundation Trust 2022. All rights reserved. Re-use of all or any part of -use of Public Sector Information Regulations 2015. SI</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
