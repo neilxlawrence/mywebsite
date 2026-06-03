@@ -15,3 +15,17 @@ h2.subtitle {
 .navbar a, .navbar-brand {
   color: white !important;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
