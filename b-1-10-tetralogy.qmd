@@ -1,4 +1,4 @@
---- PAGE 1 ---
+ PAGE 1  
 10
 Tetralogy of Fallot
 Tetralogy of Fallot is one of the more common cyanotic heart defects. Although
@@ -26,7 +26,7 @@ the normal right ventricle, is the characteristic large trabeculation on the sep
 120
 
 
---- PAGE 2 ---
+ PAGE 2  
 Tetralogy of Fallot
 121
 Figure 10.1 A specimen displayed in a fashion similar to the subcostal or right anterior
@@ -39,7 +39,7 @@ the septomarginal trabeculation. Smaller bundles of muscle, septo-parietal trabe
 line the outﬂow.
 
 
---- PAGE 3 ---
+ PAGE 3  
 122
 Echocardiography in Congenital Heart Disease Made Simple
 Figure 10.3 Schematic representation of the normal right ventricular outﬂow tract with
@@ -64,7 +64,7 @@ ventricular septal defects opening into the right ventricular outlet, with or wi
 tetralogy of Fallot. The malalignment means that the aortic valve overrides the
 
 
---- PAGE 4 ---
+ PAGE 4  
 Tetralogy of Fallot
 123
 Figure 10.4 Schematic representation of the right ventricular outﬂow tract in Fallot’s tetral-
@@ -86,7 +86,7 @@ margin of the roof is formed by the ventriculo-infundibular fold supporting the
 leaﬂets of the aortic valve.
 
 
---- PAGE 5 ---
+ PAGE 5  
 124
 Echocardiography in Congenital Heart Disease Made Simple
 Figure 10.5 This heart with Fallot’s tetralogy shows hypertrophy of septoparietal trabec-
@@ -97,7 +97,7 @@ septum (∗∗) that causes narrowing of the subpulmonary outlet (). The aorti
 arrow) has attachments to both ventricles.
 
 
---- PAGE 6 ---
+ PAGE 6  
 Tetralogy of Fallot
 125
 Figure 10.7 (a) Subcostal right anterior oblique view of a normal heart. (b) Subcostal right
@@ -209,7 +209,7 @@ In the remaining ﬁfth of cases, there is muscular separation between the aorti
 tricuspid valves in the postero-inferior margin. This is produced by fusion of the
 
 
---- PAGE 7 ---
+ PAGE 7  
 126
 Echocardiography in Congenital Heart Disease Made Simple
 Figure 10.9 The borders of the ventricular septal defect in this heart are completely muscu-
@@ -231,7 +231,7 @@ There is general agreement that pulmonary stenosis, in the form of narrowing of
 the infundibulum, is an integral part of tetralogy. The major part of the obstruction is
 
 
---- PAGE 8 ---
+ PAGE 8  
 Tetralogy of Fallot
 127
 Figure 10.10 The subpulmonary infundibulum (arrows) is elongated in this heart.
@@ -259,7 +259,7 @@ is attached almost entirely within the right ventricle, thus producing double ou
 ventriculo-arterial connection.
 
 
---- PAGE 9 ---
+ PAGE 9  
 128
 Echocardiography in Congenital Heart Disease Made Simple
 Associated Malformations
@@ -287,7 +287,7 @@ gin of the anterior interventricular coronary artery (LAD) from the right corona
 infundibulum.
 
 
---- PAGE 10 ---
+ PAGE 10  
 Tetralogy of Fallot
 129
 Figure 10.12 (a) This heart with Fallot’s tetralogy is associated with under-development
