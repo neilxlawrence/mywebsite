@@ -7,18 +7,8 @@ Welcome to the website of Neil Lawrence
 
 <br><br>
 
-For more information please contact [n.r.lawrence\@sheffield.ac.uk](mailto:n.r.lawrence@sheffield.ac.uk){.email}
+For more information please contact [neilxlawrence\@gmail.com](mailto:neilxlawrence@gmail.com){.email}
 
 <br><br>
 
-<!-- Responsive YouTube video -->
-
-::: {style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"}
-<iframe src="https://www.youtube.com/embed/mwFjnz7l_bo?si=UGto2-YrTXUejYwm"
-          title="YouTube video"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-          frameborder="0"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          allowfullscreen> </iframe>
-:::
 ::::
