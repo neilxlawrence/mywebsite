@@ -12,6 +12,8 @@ website:
         text: About
       - href: 1-infection.qmd
         text: "1 Infection"
+      - href: b-1-10-tetralogy.qmd
+        text: "CHD Chapter 10 - Tetrology of Fallot"
     logo: images/babyphono_logo_purple.png
     
 format:
